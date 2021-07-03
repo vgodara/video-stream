@@ -1,0 +1,16 @@
+/.idea/
+/.gradle/
+/gradlew
+/gradlew.bat
+/backend/common/build/
+/backend/users/application/.idea/
+/backend/users/application/build/
+/backend/users/common/build/
+/backend/users/controller/build/
+/backend/users/database/build/
+/backend/users/datasource/build/
+/backend/users/entity/build/
+/backend/users/usecase/.gradle/
+/backend/users/usecase/build/
+/common/response/build/
+/common/utilities/build/

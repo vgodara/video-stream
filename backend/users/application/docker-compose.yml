@@ -1,0 +1,21 @@
+version: "3.9"
+
+# Services we are going to use when running
+services:
+  # Backend instance that depends on database instance to start.
+  backend:
+    image: users:latest
+    depends_on:
+      - db
+    environment:
+      - ENVIRONMENT=dev
+    restart: always
+  # Database instance we need to store data
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: cETVyDaBj9K5vh4w
+      MYSQL_DATABASE: video_stream
+      MYSQL_USER: video_stream
+      MYSQL_PASSWORD: qZw9BhGRjmoJfK41
